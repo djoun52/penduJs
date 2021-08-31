@@ -1,5 +1,7 @@
 let motsTest = "test"
 let motsTestArray = []
+
+
 let motsAffiche = []
 for (let key in motsTest)[
     motsTestArray.push(motsTest[key]),
@@ -18,7 +20,6 @@ let lettreUseArray = []
 
 image.src = "public/image/"+ nbimage + ".png"
 submitBtn.addEventListener("click", proposLettre)
-document.getElementById("plus").addEventListener('click', plusImage)
 document.getElementById("motsATrouve").innerText = motsAffiche.join(" ")
 
 function proposLettre(){
@@ -32,6 +33,7 @@ function proposLettre(){
         erreur.innerHTML = "erreur : Vous devez proposez UNE lettre de l\'alphabet"
         return null
     }
+    erreur.innerHTML = ""
     lettreUse.append(" " + responce)
     for (let x in lettre) {
         if(lettre[x] == responce){
