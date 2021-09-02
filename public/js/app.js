@@ -8,7 +8,6 @@ for (let key in motsTest)[
     motsAffiche.push("_ ")
 ]
 
-
 let nbimage = 1
 let lettreUse = document.getElementById("lettreUse")
 let submitBtn = document.getElementById("submit")

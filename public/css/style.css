@@ -25,3 +25,7 @@ html, body {
     align-content: center;
     justify-content: center;
 }
+
+#game{
+    margin-left: 1em;
+}
